@@ -39,7 +39,7 @@ namespace MinhaCantina.Servidor.Migrations
                     b.HasIndex("Nome")
                         .IsUnique();
 
-                    b.ToTable("Categorias");
+                    b.ToTable("Categorias", (string)null);
                 });
 
             modelBuilder.Entity("MinhaCantina.Biblioteca.Modelos.Produto", b =>
@@ -72,7 +72,7 @@ namespace MinhaCantina.Servidor.Migrations
                     b.HasIndex("Nome")
                         .IsUnique();
 
-                    b.ToTable("Produtos");
+                    b.ToTable("Produtos", (string)null);
                 });
 
             modelBuilder.Entity("MinhaCantina.Biblioteca.Modelos.Produto", b =>
