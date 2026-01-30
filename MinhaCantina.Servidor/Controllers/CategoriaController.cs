@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MinhaCantina.Biblioteca.Modelos;
+using MinhaCantina.Biblioteca.DTOs;
 using MinhaCantina.Servidor.Dados;
 using MySqlConnector;
 
@@ -75,8 +76,4 @@ public class CategoriaRegistroDto
 	public string Nome { get; set; } // Propriedade
 }
 
-public class CategoriaRespostaDto
-{
-	public int Id { get; set; }
-	public string Nome { get; set; }
-}
+
