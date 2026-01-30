@@ -1,21 +1,23 @@
 ﻿@page "/login"
 
-<PageTitle>Entrar com a sua conta</PageTitle>
+<PageTitle>Entra com a sua conta</PageTitle>
 
 <h3>Login</h3>
 
-<form class="mt-5" style="max-width: 250px;">
-    <div class="form-outline mb-4">
-        <label class="form-label" for="usuario">Username</label>
-        <input type="text" id="usuario" class="form-control" />
-    </div>
+@* 1 tag form > 1 campo para username, 1 campo para senha, 1 botão *@
+<form>
+	<div class="mb-3">
+		<label for="login" class="form-label">username </label>
+		<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Usuario">
+	</div>
+	<div class="mb-3">
+		<label for="senha" class="form-label">senha</label>
+		<input type="password" class="form-control" id="exampleFormControlTextarea1" placeholder="Senha"/>
+	</div>
 
-    <div class="form-outline mb-4">
-        <label class="form-label" for="senha">Senha</label>
-        <input type="password" id="senha" class="form-control" />
-    </div>
-
-    <input type="button" class="btn btn-primary btn-block mb-4" value="Entrar">
+	<div>
+		<input type="button" id="" class="btn btn-dark" value="Entrar" />
+	</div>
 </form>
 
 @code {
